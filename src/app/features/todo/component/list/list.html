@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let i of data">
+    <input type="checkbox" [checked]="i.checked" (change)="toggle(i)" />
+    <p [ngClass]="{ done: i.checked }">
+      {{ i.name }}
+    </p>
+  </li>
+</ul>

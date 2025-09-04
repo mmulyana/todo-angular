@@ -1,9 +1,17 @@
 import { Routes } from '@angular/router';
-import { PageTodo } from './features/todo/pages/page-todo/page-todo';
+import { MyDayPages } from './features/todo/pages/my-day.pages';
 
 export const routes: Routes = [
   {
     path: '',
-    component: PageTodo,
+    component: MyDayPages,
+  },
+  {
+    path: 'inbox',
+    component: MyDayPages,
+  },
+  {
+    path: 'completed',
+    component: MyDayPages,
   },
 ];

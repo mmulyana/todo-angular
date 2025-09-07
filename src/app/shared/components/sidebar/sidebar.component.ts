@@ -2,18 +2,17 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import {
   LucideAngularModule,
+  SquareCheckBig,
   CheckCheck,
   Calendar1,
-  SquareCheck,
   Inbox,
   Folder,
-  SquareCheckBig,
 } from 'lucide-angular';
 
 @Component({
+  standalone: true,
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  standalone: true,
   imports: [RouterLink, RouterLinkActive, LucideAngularModule],
 })
 export class Sidebar {
@@ -23,5 +22,5 @@ export class Sidebar {
   readonly InboxIcon = Inbox;
   readonly FolderIcon = Folder;
 
-    activeClass = '!text-white bg-[#272B33]';
+  activeClass = '!text-white bg-[#272B33]';
 }

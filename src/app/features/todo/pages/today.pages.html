@@ -1,0 +1,8 @@
+<default-layout>
+  <div class="flex gap-4 items-center">
+    <lucide-angular [name]="Icon" size="24" class="text-white" />
+    <p class="text-lg text-white font-medium">Today</p>
+  </div>
+  <app-list [data]="todos"></app-list>
+  <form-task (taskSubmit)="handleSumit($event)"></form-task>
+</default-layout>

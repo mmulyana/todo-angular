@@ -1,0 +1,10 @@
+<ul class="list-none p-0">
+  @for (i of data; track i.id) {
+  <li class="my-1.5 flex items-center gap-2">
+    <input type="checkbox" [(ngModel)]="i.checked" class="w-4 h-4" />
+    <p [class.line-through]="i.checked" [class.text-gray-500]="i.checked">
+      {{ i.name }}
+    </p>
+  </li>
+  }
+</ul>
